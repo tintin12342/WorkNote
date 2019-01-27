@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Work Note</string>
+
+    //Week days
+    <string name="mon">MONDAY</string>
+    <string name="tue">TUESDAY</string>
+    <string name="wed">WEDNESDAY</string>
+    <string name="thu">THURSDAY</string>
+    <string name="fri">FRIDAY</string>
+    <string name="sat">SATURDAY</string>
+    <string name="sun">SUNDAY</string>
+    <string name="monTime">Set Monday Time</string>
+    <string name="tueTime">Set Tuesday Time</string>
+    <string name="wedTime">Set Wednesday Time</string>
+    <string name="thuTime">Set Thursday Time</string>
+    <string name="friTime">Set Friday Time</string>
+    <string name="satTime">Set Saturday Time</string>
+    <string name="sunTime">Set Sunday Time</string>
+
+    //Button text
+    <string name="addNote">ADD NOTE</string>
+    <string name="editNote">EDIT NOTE</string>
+    <string name="add">ADD</string>
+
+    <string name="errorMessage">Please select date from bellow.</string>
+    <string name="description">Description</string>
+    <string name="time">Select Time</string>
+    <string name="date">Select Date</string>
+</resources>

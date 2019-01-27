@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundColor"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:overScrollMode="never"
+        android:layoutAnimation="@anim/recyclerview_layout_animation"
+        tools:listitem="@layout/note_item" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/mainBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_gravity="bottom"
+        android:backgroundTint="@color/colorPrimaryDark"
+        app:fabAlignmentMode="end"
+        app:fabCradleRoundedCornerRadius="25dp"
+        app:hideOnScroll="true"
+        app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        app:fabSize="normal"
+        app:layout_anchor="@+id/mainBar" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
